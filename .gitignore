@@ -1,0 +1,5 @@
+srcs/*.o
+
+libft.a
+
+*.out
