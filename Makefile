@@ -13,7 +13,7 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	cc main.c -L. -lft -o myfunc
+	cc main.c -L. -lft -o main
 
 %.o : %.c
 	cc $(CFLAGS) -I $(INCLUDES) -c $^ -o $@
