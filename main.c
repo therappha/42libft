@@ -16,7 +16,8 @@ int	main(void)
 	printf("'%s' strlen: %d\n", "Hello World!", ft_strlen("Hello World!"));
 	printf("'%c' toupper: %c\n", 'a', (ft_toupper('a')));
 	printf("'%c' toupper: %c\n", 'A', (ft_toupper('A')));
-
+	printf("'%c' tolower: %c\n", 'a', (ft_tolower('a')));
+	printf("'%c' tolower: %c\n", 'A', (ft_tolower('A')));
 
 
 }
