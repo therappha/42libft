@@ -40,5 +40,5 @@ int	main(void)
 	printf("copying with ft_memcpy: 1 bytes of an int with value 255 (11111111 00000000 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
 	 int_src = 511;  int_dest = 0;
 	printf("copying with ft_memcpy: 1 bytes of an int with value 511 (11111111 00000001 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
-	char buffer_memmove[20] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 6); printf(""Hello, World!" ft_memmove: buffer: '%s'\n", buffer_memmove);
+	char buffer_memmove[] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("'Hello, World!' ft_memmove: buffer: '%s'\n", buffer_memmove);
 }

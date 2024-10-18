@@ -12,7 +12,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-
+//Needs to be redone, I dont think we can use malloc
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t			i;
