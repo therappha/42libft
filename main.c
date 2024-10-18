@@ -23,19 +23,22 @@ int	main(void)
 	printf("'Hello world' ft_strchr searching for first: 'a': '%s'\n", ft_strchr("Hello world", 'a'));
 	printf("'Hello world' ft_strrchr searching for last: 'o': '%s'\n", ft_strrchr("Hello world", 'o'));
 	printf("'Hello world' ft_strrchr searching for last: 'a': '%s'\n", ft_strrchr("Hello world", 'a'));
-	printf("'Hello World' ft_strncmp comparting 5 digits with: 'Hella' = %d\n", ft_strncmp("Hello World", "Hella", 5));
+	printf("'Hello World' ft_strncmp comparting 5 digits with 'Hella' : %d\n", ft_strncmp("Hello World", "Hella", 5));
 	char buffer_memset[10] = {0};
-	ft_memset(buffer_memset, 'a', sizeof(buffer_memset));
-	printf("filling with ft_memset, buffer with 'a', buffer: '%s'\n",  buffer_memset);
-	ft_bzero(buffer_memset, sizeof(buffer_memset));
-	printf("wiping buffer_memset with ft_bzero: '%s'\n",  buffer_memset);
-	printf("Buffer after ft_bzero: ");
-	for (int i = 0; i < sizeof(buffer_memset); i++) {
-		printf("%d ", buffer_memset[i]);
-		}
-		printf("\n");
-	printf("'Hello world' ft_memchr: searching for first: 'o' in the first, 4 digits: '%s'\n", ft_memchr("Hello world", 'o', 4));
-	printf("'Hello world' ft_memchr: searching for first: 'o' in the first, 5 digits: '%s'\n", ft_memchr("Hello world", 'o', 5));
-	printf("'Hello world' ft_memchr searching for first: 'a' in sizeof(\"Hello world)\" '%s'\n", ft_memchr("Hello world", 'a', sizeof("Hello world")));
+	ft_memset(buffer_memset, 'a', sizeof(buffer_memset)); printf("filling with ft_memset, buffer with 'a', buffer: '%s'\n",  buffer_memset);
+	ft_bzero(buffer_memset, sizeof(buffer_memset)); printf("wiping buffer_memset with ft_bzero: '%s'\n",  buffer_memset);
+	printf("Buffer after ft_bzero: "); for (int i = 0; i < sizeof(buffer_memset); i++) {printf("%d ", buffer_memset[i]);}printf("\n");
+	printf("'Hello world' ft_memchr: searching for first: 'o' in the first, 4 digits: '%s'\n", (char *)ft_memchr("Hello world", 'o', 4));
+	printf("'Hello world' ft_memchr: searching for first: 'o' in the first, 5 digits: '%s'\n", (char *)ft_memchr("Hello world", 'o', 5));
+	printf("'Hello world' ft_memchr: searching for first: 'a' in sizeof(\"Hello world)\" '%s'\n", (char *)ft_memchr("Hello world", 'a', sizeof("Hello world")));
+	printf("'Hello world' ft_memcpy: copying the first 6 bytes:  '%s'\n", (char *)ft_memcpy(buffer_memset, "Hello world", 6));
+	printf("the modern pc-system read bytes backwards, 512 in binary is '1000000000',pc reads the last 8 digits first as one byte then the rest \n");
+	 int int_src = 512; int int_dest = 0;
+	printf("copying with ft_memcpy: 1 bytes of an int with value 512 (00000000 00000010 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
+	printf("copying with ft_memcpy: 2 bytes of an int with value 512 (00000000 00000010 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 2); printf("%d\n", int_dest);
+	 int_src = 255;  int_dest = 0;
+	printf("copying with ft_memcpy: 1 bytes of an int with value 255 (11111111 00000000 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
+	 int_src = 511;  int_dest = 0;
+	printf("copying with ft_memcpy: 1 bytes of an int with value 511 (11111111 00000001 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
 
 }
