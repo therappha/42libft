@@ -9,6 +9,8 @@ int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+char	*ft_strchr(char *str, char c);
+char	*ft_strrchr(char *str, char c);
 
 #endif
 
