@@ -24,4 +24,7 @@ int	main(void)
 	printf("'Hello world' ft_strrchr searching for last: 'o': '%s'\n", ft_strrchr("Hello world", 'o'));
 	printf("'Hello world' ft_strrchr searching for last: 'a': '%s'\n", ft_strrchr("Hello world", 'a'));
 	printf("'Hello World' ft_strncmp comparting 5 digits with: 'Hella' = %d\n", ft_strncmp("Hello World", "Hella", 5));
+	char buffer_memset[10] = {0};
+	ft_memset(buffer_memset, 'a', sizeof(buffer_memset));
+	printf("filling with ft_memset, buffer with 'a', buffer: %s'\n",  buffer_memset);
 }

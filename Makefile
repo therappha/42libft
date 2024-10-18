@@ -1,6 +1,8 @@
 
 SRCS = $(wildcard srcs/*.c)
 
+CFLAGS = -Wall -Wextra -Werror
+
 INCLUDES = includes
 
 OBJS = $(SRCS:.c=.o)
@@ -11,10 +13,10 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	cc main.c -L. -lft
+	cc main.c -L. -lft -o myfunc
 
 %.o : %.c
-	cc -Wall -Werror -Wextra -I $(INCLUDES) -c $^ -o $@
+	cc $(CFLAGS) -I $(INCLUDES) -c $^ -o $@
 
 clean:
 	rm -rf srcs/*.o
