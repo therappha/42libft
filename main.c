@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "includes/libft.h"
 
 int	main(void)
@@ -34,11 +35,15 @@ int	main(void)
 	printf("'Hello world' ft_memcpy: copying the first 6 bytes:  '%s'\n", (char *)ft_memcpy(buffer_memset, "Hello world", 6));
 	printf("the modern pc-system read bytes backwards, 512 in binary is '1000000000',pc reads the last 8 digits first as one byte then the rest \n");
 	 int int_src = 512; int int_dest = 0;
-	printf("copying with ft_memcpy: 1 bytes of an int with value 512 (00000000 00000010 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
-	printf("copying with ft_memcpy: 2 bytes of an int with value 512 (00000000 00000010 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 2); printf("%d\n", int_dest);
+	printf("copying with ft_memcpy: 1 bytes of an int with value 512 (00000000 00000010 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("int dest: %d\n", int_dest);
+	printf("copying with ft_memcpy: 2 bytes of an int with value 512 (00000000 00000010 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 2); printf("int dest: %d\n", int_dest);
 	 int_src = 255;  int_dest = 0;
-	printf("copying with ft_memcpy: 1 bytes of an int with value 255 (11111111 00000000 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
+	printf("copying with ft_memcpy: 1 bytes of an int with value 255 (11111111 00000000 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("int dest: %d\n", int_dest);
 	 int_src = 511;  int_dest = 0;
-	printf("copying with ft_memcpy: 1 bytes of an int with value 511 (11111111 00000001 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("%d\n", int_dest);
-	char buffer_memmove[] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("'Hello, World!' ft_memmove: buffer: '%s'\n", buffer_memmove);
+	printf("copying with ft_memcpy: 1 bytes of an int with value 511 (11111111 00000001 00000000 00000000): "); ft_memcpy(&int_dest, &int_src, 1); printf("int dest: %d\n", int_dest);
+	printf("comparing 1 byte ft_memcmp: %d and %d : %d\n", int_src, int_dest, ft_memcmp(&int_src, &int_dest, 1));
+	printf("comparing 2 bytes ft_memcmp: %d and %d : %d\n", int_src, int_dest, ft_memcmp(&int_src, &int_dest, 2));
+	printf("comparing 1 byte with memcmp: %d and %d : %d\n", int_src, int_dest, memcmp(&int_src, &int_dest, 1));
+	printf("comparing 2 bytes with memcmp: %d and %d : %d\n", int_src, int_dest, memcmp(&int_src, &int_dest, 2));
+	char buffer_memmove[] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("src = 'Hello, World!' ft_memmove: copying  5 bytes at dest 'src + 7' new src: '%s'\n", buffer_memmove);
 }
