@@ -46,4 +46,5 @@ int	main(void)
 	printf("comparing 1 byte with memcmp: %d and %d : %d\n", int_src, int_dest, memcmp(&int_src, &int_dest, 1));
 	printf("comparing 2 bytes with memcmp: %d and %d : %d\n", int_src, int_dest, memcmp(&int_src, &int_dest, 2));
 	char buffer_memmove[] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("src = 'Hello, World!' ft_memmove: copying  5 bytes at dest 'src + 7' new src: '%s'\n", buffer_memmove);
+	//no tests for strlcpy yet:::
 }

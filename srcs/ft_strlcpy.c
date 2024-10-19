@@ -17,7 +17,7 @@ int	ft_strlcpy(char *src, char *dest, unsigned int size)
 
 	len = 0;
 	i = 0;
-	while(str[len])
+	while(src[len])
 		len++;
 	if (size == 0)
 		return (len)
@@ -27,6 +27,5 @@ int	ft_strlcpy(char *src, char *dest, unsigned int size)
 		i++;
  	}
 	dest[i] = '\0';
-	return (len)
+	return (len);
 }
-
