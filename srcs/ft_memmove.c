@@ -6,13 +6,13 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 22:45:59 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/18 22:45:59 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/21 12:32:15 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdlib.h>
-//Needs to be redone, I dont think we can use malloc
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t			i;
@@ -29,11 +29,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	while(i < n)
 	{
 		temp[i] = src_bytes[i];
-		i++;
-	}
-	i = 0;
-	while(i < n)
-	{
 		dest_bytes[i] = temp[i];
 		i++;
 	}

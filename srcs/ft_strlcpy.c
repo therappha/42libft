@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 01:22:49 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/19 01:22:49 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/21 12:27:37 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strlcpy(char *src, char *dest, unsigned int size)
 	while(src[len])
 		len++;
 	if (size == 0)
-		return (len)
+		return (len);
 	while(i < size - 1 && src[i] != '\0')
 	{
 		dest[i] = src[i];
