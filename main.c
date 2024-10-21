@@ -45,6 +45,8 @@ int	main(void)
 	printf("comparing 2 bytes ft_memcmp: %d and %d : %d\n", int_src, int_dest, ft_memcmp(&int_src, &int_dest, 2));
 	printf("comparing 1 byte with memcmp: %d and %d : %d\n", int_src, int_dest, memcmp(&int_src, &int_dest, 1));
 	printf("comparing 2 bytes with memcmp: %d and %d : %d\n", int_src, int_dest, memcmp(&int_src, &int_dest, 2));
-	char buffer_memmove[] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("src = 'Hello, World!' ft_memmove: copying  5 bytes at dest 'src + 7' new src: '%s'\n", buffer_memmove);
+	char buffer_memmove[20] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("src = 'Hello, World!' ft_memmove: copying  5 bytes at dest 'src + 7' new src: '%s'\n", buffer_memmove);
 	//no tests for strlcpy yet:::
+	printf("tests ft_atoi for: 42, -42, 2147483647, -2147483648, (-+1) | results: '%d', '%d', '%d', '%d', '%d' \n", ft_atoi("42"),ft_atoi("-42"), ft_atoi("2147483647"), ft_atoi("-2147483648"), ft_atoi("-+1"));
+	printf("'%s' appending ' Hello, 42' at the end: ", buffer_memmove); ft_strlcat(buffer_memmove, " Hello, 42!", 11); printf("'%s'", buffer_memmove);
 }

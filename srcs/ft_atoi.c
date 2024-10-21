@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 21:16:09 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/21 15:57:59 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/10/21 13:52:44 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/10/21 15:29:12 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+int	ft_atoi(char *str)
+{
+	int		minus;
+	long	result;
 
- void	*ft_memcpy(void *dest, const void *src, size_t n)
- {
-	unsigned char	*src_bytes;
-	unsigned char	*dest_bytes;
-	size_t			i;
-
-	i = 0;
-	src_bytes = (unsigned char *)src;
-	dest_bytes = (unsigned char *)dest;
-	if (!src || !dest)
-		return (dest);
-	while(i < n)
+	minus = 1;
+	result = 0;
+	while((*str == 32) || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		dest_bytes[i] = src_bytes[i];
-		i++;
+		if (*str == '-')
+			minus *= -1;
+		str++;
 	}
-	dest = (((void *)dest_bytes));
-	return (dest);
- }
+	while(*str >= '0' && *str <= '9')
+	{
+		result = result * 10 + *str - '0';
+		str++;
+	}
+	return ((int)result * minus);
+}
