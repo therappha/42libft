@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "includes/libft.h"
+#include <stdlib.h>
 
 int	main(void)
 {
@@ -48,5 +49,10 @@ int	main(void)
 	char buffer_memmove[20] = "Hello, World!"; ft_memmove(buffer_memmove + 7, buffer_memmove, 5); printf("src = 'Hello, World!' ft_memmove: copying  5 bytes at dest 'src + 7' new src: '%s'\n", buffer_memmove);
 	//no tests for strlcpy yet:::
 	printf("tests ft_atoi for: 42, -42, 2147483647, -2147483648, (-+1) | results: '%d', '%d', '%d', '%d', '%d' \n", ft_atoi("42"),ft_atoi("-42"), ft_atoi("2147483647"), ft_atoi("-2147483648"), ft_atoi("-+1"));
-	printf("'%s' appending ' Hello, 42' at the end: ", buffer_memmove); ft_strlcat(buffer_memmove, " Hello, 42!", 11); printf("'%s'", buffer_memmove);
+	printf("'%s' appending ' Hello, 42' at the end: ", buffer_memmove); ft_strlcat(buffer_memmove, " Hello, 42!", 11); printf("'%s'\n", buffer_memmove);
+	char *new_str = ft_strdup(buffer_memmove); printf("testing: ft_strdup, original str = '%s', duplicated string = '%s'\n",buffer_memmove, new_str); free(new_str);
+	printf("searching for 'ell' in string '|%s|' after = %s\n", buffer_memmove, ft_strnstr(buffer_memmove, "ell", sizeof(buffer_memmove)));
+	printf("searching for ' ''space' in string '|%s|' = %s\n", buffer_memmove, ft_strnstr(buffer_memmove, " ", sizeof(buffer_memmove)));
+	printf("searching for 'Ola' in string '|%s|' = %s\n", buffer_memmove, ft_strnstr(buffer_memmove, "Ola", sizeof(buffer_memmove)));
+	printf("searching for '' in string '|%s|' = %s\n", buffer_memmove, ft_strnstr(buffer_memmove, "", sizeof(buffer_memmove)));
 }

@@ -1,36 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 15:07:57 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 17:18:21 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/10/22 15:38:57 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/10/22 15:46:55 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+static int	ft_strlen(const char *str)
 {
-	size_t	i;
-	size_t	j;
+	int	i;
 
 	i = 0;
-	if (!little[i])
-		return ((char *)big);
-	while (big[i] && i < len)
+	while (str[i])
+		i++;
+	return (i);
+}
+
+char	*ft_strdup(const char *src)
+{
+	int		len;
+	char	*str;
+	int		i;
+
+	i = 0;
+	len = ft_strlen(src);
+	str = (char *)malloc(len + 1);
+	if (!str)
+		return (NULL);
+	while (src[i])
 	{
-		j = 0;
-		while (little[j] == big[i] && little[j])
-		{
-			i++;
-			j++;
-		}
-		if (!little[j])
-			return ((char *)big + i - j);
-		i += j;
+		str[i] = src[i];
+		i++;
 	}
-	return (NULL);
+	str[i] = '\0';
+	return (str);
 }
