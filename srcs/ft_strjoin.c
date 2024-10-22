@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:47:14 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 19:14:58 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:22:26 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ static char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-static int ft_strlen(const char *str)
+
+static int	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -34,6 +35,7 @@ static int ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
@@ -42,6 +44,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!str)
 		return (NULL);
 	ft_strcpy(str, (char *)s1);
-	ft_strcpy(str, (char *)s2);
+	ft_strcpy((str + ft_strlen(s1)), (char *)s2);
 	return (str);
 }

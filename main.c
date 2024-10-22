@@ -57,5 +57,5 @@ int	main(void)
 	printf("searching for '' with ft_strnstr: in string |'%s'| = %s\n", buffer_memmove, ft_strnstr(buffer_memmove, "", sizeof(buffer_memmove)));
 	printf("Copying with ft_substr: from index 7 in string |'%s'| the substring of size 5: result = |'%s'|\n", buffer_memmove, ft_substr(buffer_memmove, 7, 5));
 	printf("Copying with ft_substr: from index 7 in string |'%s'| the substring of size 17: result = |'%s'|\n", buffer_memmove, ft_substr(buffer_memmove, 7, 17));
-	*new_str = *ft_strjoin("Hello, ", "World!");	printf("joining with ft_strjoin(\"Hello, \", \"World!\") returns = |'%s'|", new_str);
+	new_str = ft_strjoin("Hello, ", "World!");	printf("joining with ft_strjoin(\"Hello, \", \"World!\") returns = |'%s'|", new_str);
 }
