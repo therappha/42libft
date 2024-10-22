@@ -14,12 +14,12 @@
 
 char	*ft_strrchr(char *str, char c)
 {
-	int		last;
-	int 	i;
+	int	last;
+	int	i;
 
 	i = 0;
 	last = -1;
-	while(str[i])
+	while (str[i])
 	{
 		if (str[i] == c)
 			last = i;
@@ -28,5 +28,4 @@ char	*ft_strrchr(char *str, char c)
 	if (last == -1)
 		return (NULL);
 	return (str += last);
-
 }

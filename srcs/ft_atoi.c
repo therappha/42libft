@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:52:44 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/21 15:29:12 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/22 15:27:09 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_atoi(char *str)
 
 	minus = 1;
 	result = 0;
-	while((*str == 32) || (*str >= 9 && *str <= 13))
+	while ((*str == 32) || (*str >= 9 && *str <= 13))
 		str++;
 	if (*str == '-' || *str == '+')
 	{
@@ -25,7 +25,7 @@ int	ft_atoi(char *str)
 			minus *= -1;
 		str++;
 	}
-	while(*str >= '0' && *str <= '9')
+	while (*str >= '0' && *str <= '9')
 	{
 		result = result * 10 + *str - '0';
 		str++;

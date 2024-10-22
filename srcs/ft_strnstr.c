@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 20:32:05 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 15:27:35 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/10/22 15:07:57 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/10/22 15:26:46 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t			i;
-	unsigned char	*mem;
+	size_t	i;
+	size_t	j;
 
-	mem = s;
 	i = 0;
-	while (i < n)
+	if (!little[i])
+		return ((char *)big);
+	while (big[i] && i < len)
 	{
-		mem[i] = 0;
-		i++;
+		j = 0;
+		while (little[j] == big[i] && little[j])
+		{
+			i++;
+			j++;
+		}
+		if (!little[j])
+			return ((char *)big[i - j]);
+		i += j;
 	}
+	return (NULL);
 }

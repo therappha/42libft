@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:52:50 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/21 15:59:38 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/22 15:31:19 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ static int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i])
+	while (str[i])
 		i++;
 	return (i);
 }
 
-int ft_strlcat(char *dest, const char *src, size_t size)
+int	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
@@ -35,9 +35,9 @@ int ft_strlcat(char *dest, const char *src, size_t size)
 		return (ft_strlen((char *)dest));
 	if (size == 0)
 		return (ft_strlen((char *)src) + ft_strlen((char *)dest));
-	while(dest[i])
+	while (dest[i])
 		i++;
-	while(src[j] && j < size)
+	while (src[j] && j < size)
 	{
 		dest[i] = src[j];
 		i++;

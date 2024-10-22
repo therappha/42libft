@@ -6,14 +6,14 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 21:16:09 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/21 15:57:59 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/22 15:29:48 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
- void	*ft_memcpy(void *dest, const void *src, size_t n)
- {
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
 	unsigned char	*src_bytes;
 	unsigned char	*dest_bytes;
 	size_t			i;
@@ -23,11 +23,11 @@
 	dest_bytes = (unsigned char *)dest;
 	if (!src || !dest)
 		return (dest);
-	while(i < n)
+	while (i < n)
 	{
 		dest_bytes[i] = src_bytes[i];
 		i++;
 	}
 	dest = (((void *)dest_bytes));
 	return (dest);
- }
+}

@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 22:45:59 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/21 12:32:15 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/22 15:30:05 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (!temp)
 		return (NULL);
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		temp[i] = src_bytes[i];
 		dest_bytes[i] = temp[i];

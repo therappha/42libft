@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:44:04 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/18 20:44:04 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/22 15:28:51 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	mem = (unsigned char *)s;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		if (mem[i] == (unsigned int)c)
 			return ((void *)(mem + i));
 		i++;
 	}
 	return (NULL);
-  }
+}
