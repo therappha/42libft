@@ -34,5 +34,6 @@ int		ft_atoi(char *str);
 int		ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strdup(const char *src);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
