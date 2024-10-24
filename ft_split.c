@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/24 19:45:56 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:54:38 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_countwords(const char *s, char c)
 	while (s[i])
 	{
 		while (s[i] == c)
-				i++;
+			i++;
 		if (s[i] != '\0' && s[i] != c)
 		{
 			words++;
@@ -38,7 +38,7 @@ static int	ft_countwords(const char *s, char c)
 	return (words);
 }
 
-static char *ft_strndupmod(const char *str, int start, int end)
+static char	*ft_strndupmod(const char *str, int start, int end)
 {
 	char	*newstr;
 	int		i;
@@ -59,7 +59,7 @@ static char *ft_strndupmod(const char *str, int start, int end)
 	return (newstr);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		i;
 	int		j;
@@ -87,7 +87,7 @@ char **ft_split(char const *s, char c)
 	return (array);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char str[] = "Hello  world ola mundo";
 	int i = 0;
@@ -100,4 +100,4 @@ int	main(void)
 		i++;
 	}
 	free(array);
-}
+}*/
