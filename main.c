@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "includes/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 int	main(void)
@@ -16,7 +16,7 @@ int	main(void)
 	printf("(int)'%d' isascii: %s\n", 25929, (ft_isascii(25929) ? "true" : "false"));
 	printf("'%d' isprint: %s\n", 'b', (ft_isprint('b') ? "true" : "false"));
 	printf("'%d' isprint: %s\n", '\n', (ft_isprint('\n') ? "true" : "false"));
-	printf("'%s' strlen: %d\n", "Hello, World!", ft_strlen("Hello, World!"));
+	printf("'%s' strlen: %d\n", "Hello, World!", (int)ft_strlen("Hello, World!"));
 	printf("'%c' toupper: %c\n", 'a', (ft_toupper('a')));
 	printf("'%c' toupper: %c\n", 'A', (ft_toupper('A')));
 	printf("'%c' tolower: %c\n", 'a', (ft_tolower('a')));
@@ -29,7 +29,7 @@ int	main(void)
 	char buffer_memset[10] = {0};
 	ft_memset(buffer_memset, 'a', sizeof(buffer_memset)); printf("filling with ft_memset, buffer with 'a', buffer: '%s'\n",  buffer_memset);
 	ft_bzero(buffer_memset, sizeof(buffer_memset)); printf("wiping buffer_memset with ft_bzero: '%s'\n",  buffer_memset);
-	printf("Buffer after ft_bzero: "); for (int i = 0; i < sizeof(buffer_memset); i++) {printf("%d ", buffer_memset[i]);}printf("\n");
+	printf("Buffer after ft_bzero: "); for (unsigned long i = 0; i < sizeof(buffer_memset); i++) {printf("%d ", buffer_memset[i]);}printf("\n");
 	printf("'Hello world' ft_memchr: searching for first: 'o' in the first, 4 digits: '%s'\n", (char *)ft_memchr("Hello world", 'o', 4));
 	printf("'Hello world' ft_memchr: searching for first: 'o' in the first, 5 digits: '%s'\n", (char *)ft_memchr("Hello world", 'o', 5));
 	printf("'Hello world' ft_memchr: searching for first: 'a' in sizeof(\"Hello world)\" '%s'\n", (char *)ft_memchr("Hello world", 'a', sizeof("Hello world")));

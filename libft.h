@@ -16,7 +16,7 @@
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-int		ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_toupper(int c);
@@ -36,6 +36,5 @@ char	*ft_strdup(const char *src);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-
 
 #endif

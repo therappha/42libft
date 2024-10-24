@@ -1,9 +1,9 @@
 
-SRCS = $(wildcard srcs/*.c)
+SRCS = $(wildcard *.c)
 
 CFLAGS = -Wall -Wextra -Werror
 
-INCLUDES = includes
+INCLUDES = .
 
 OBJS = $(SRCS:.c=.o)
 
@@ -20,7 +20,7 @@ $(NAME) : $(OBJS)
 	cc $(CFLAGS) -I $(INCLUDES) -c $^ -o $@
 
 clean:
-	rm -rf srcs/*.o
+	rm -rf *.o
 
 fclean: clean
 	rm -rf $(NAME)
