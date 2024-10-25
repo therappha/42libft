@@ -13,7 +13,7 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	cc main.c -L. -lft -o main.out
+#	cc main.c -L. -lft -o main.out
 
 
 %.o : %.c
