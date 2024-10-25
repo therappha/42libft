@@ -1,5 +1,4 @@
-srcs/*.o
-
+*.o
 libft.a
-
 *.out
+main.c
