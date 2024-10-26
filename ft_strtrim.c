@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:43:25 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 18:49:22 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/26 19:59:14 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-size_t	ft_strlen(const char *str)
+static size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
@@ -51,6 +51,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		end_s1;
 	int		end_set;
 
+	if (!s1 || !set)
+		return (NULL);
 	start = 0;
 	end_s1 = ft_strlen(s1);
 	end_set = ft_strlen(set);
@@ -71,7 +73,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 // int	main(void)
 // {
-// 	char *str = "OLA'PUT YOUR TEXT HERE'OLA";
-// 	str = ft_strtrim(str, "OLA");
+// 	char *str = "";
+// 	str = ft_strtrim(str, "");
 // 	printf("%s\n", str);
 // }

@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, int n)
+#include <stddef.h>
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while ((s1[i] == s2[i]) && s1[i] && s2[i] && i < n - 1)

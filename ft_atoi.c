@@ -6,11 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:52:44 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 15:27:09 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/26 19:55:35 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int		minus;
 	long	result;

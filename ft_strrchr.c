@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-char	*ft_strrchr(char *str, char c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	last;
 	int	i;
@@ -27,5 +27,5 @@ char	*ft_strrchr(char *str, char c)
 	}
 	if (last == -1)
 		return (NULL);
-	return (str += last);
+	return ((char *)(str += last));
 }

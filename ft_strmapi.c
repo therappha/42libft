@@ -6,14 +6,14 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:51:25 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 19:23:07 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/26 19:58:52 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *str)
+static size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
