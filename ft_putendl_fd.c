@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:36:17 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/25 19:42:58 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/26 19:09:07 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,7 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	ft_putchar_fd('\n', fd);
 }
-
 /*int	main(void)
 {
 	ft_putendl_fd("Hello, World!", 1);
 }*/
-

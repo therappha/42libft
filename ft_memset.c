@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -28,3 +29,16 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+// int	main(void)
+// {
+// 	char buffer_memset[11] = {0};
+// 	ft_memset(buffer_memset, 126, 10);
+// 	buffer_memset[10] = '\0';
+// 	printf("\nfilling with ft_memset, buffer with ,
+//	buffer: '%s'\n",  buffer_memset);
+// 	for (unsigned long i = 0; i < sizeof(buffer_memset); i++)
+//{
+// 	printf("%p", buffer_memset[i]);
+// }
+// 	printf("\n");
+// }

@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 19:31:48 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 19:08:07 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/10/26 18:57:35 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/10/26 19:20:52 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-static void	ft_putchar_fd(char c, int fd)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	write(fd, &c, 1);
-}
+	unsigned int	i;
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	while (*s)
+	i = 0;
+	while (s[i])
 	{
-		ft_putchar_fd(((char)*s), fd);
-		s++;
+		f(i, s + i);
+		i++;
 	}
 }
-/*int	main(void)
-{
-	ft_putstr_fd("Hello, World!", 1);
-}*/

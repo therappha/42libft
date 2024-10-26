@@ -1,31 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 19:31:48 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 19:08:07 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/10/26 18:51:25 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/10/26 19:23:07 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
+#include <stdlib.h>
 
-static void	ft_putchar_fd(char c, int fd)
+size_t	ft_strlen(const char *str)
 {
-	write(fd, &c, 1);
+	size_t	i;
+
+	i = 0;
+	while (*str++)
+		i++;
+	return (i);
 }
 
-void	ft_putstr_fd(char *s, int fd)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	while (*s)
+	unsigned int	i;
+	char			*str;
+
+	str = (char *)malloc(ft_strlen(s) + 1);
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (s[i])
 	{
-		ft_putchar_fd(((char)*s), fd);
-		s++;
+		str[i] = f(i, s[i]);
+		i++;
 	}
+	str[i] = '\0';
+	return (str);
 }
-/*int	main(void)
-{
-	ft_putstr_fd("Hello, World!", 1);
-}*/
