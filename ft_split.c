@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/24 19:54:38 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/26 19:43:30 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,17 +87,18 @@ char	**ft_split(char const *s, char c)
 	return (array);
 }
 
-/*int	main(void)
-{
-	char str[] = "Hello  world ola mundo";
-	int i = 0;
-	char **array;
-	array = ft_split(str, ' ');
-	while (array[i])
-	{
-		printf("%s\n", array[i]);
-		free(array[i]);
-		i++;
-	}
-	free(array);
-}*/
+// int	main(void)
+// {
+// 	char str[] = "asdas";
+// 	int i = 0;
+// 	char **array;
+// 	array = ft_split(str, ' ');
+// 		printf("'%s' splitted into:\n", str);
+// // 	while (array[i])
+// // 	{
+// // 		printf("%s\n", array[i]);
+// // 		free(array[i]);
+// // 		i++;
+// // 	}
+// 	free(array);
+//  }
