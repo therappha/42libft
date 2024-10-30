@@ -25,6 +25,8 @@ char	*ft_strrchr(const char *str, int c)
 			last = i;
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)(str += i));
 	if (last == -1)
 		return (NULL);
 	return ((char *)(str += last));

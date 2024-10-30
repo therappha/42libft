@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 19:43:30 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/30 18:30:08 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,17 +65,17 @@ char	**ft_split(char const *s, char c)
 	int		j;
 	int		arrnmb;
 	char	**array;
+	int		words;
 
-	if (ft_countwords(s, c) == 0)
-		return (NULL);
-	array = (char **)malloc((ft_countwords(s, c) + 1) * sizeof(char *));
-	if (!array)
+	words = ft_countwords(s, c);
+	array = (char **)malloc((words + 1) * sizeof(char *));
+	if (!array || !s)
 		return (NULL);
 	i = 0;
 	arrnmb = 0;
-	while (s[i] != '\0')
+	while (s[i] && arrnmb < words)
 	{
-		while (s[i] == c)
+		while (s[i] == c && s[i] != '\0')
 			i++;
 		j = i;
 		while (s[j] != c && s[j] != '\0')
@@ -89,16 +89,16 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char str[] = "asdas";
+// 	char str[] = "             ";
 // 	int i = 0;
 // 	char **array;
-// 	array = ft_split(str, ' ');
+// 	array = ft_split(str, '\0');
 // 		printf("'%s' splitted into:\n", str);
-// // 	while (array[i])
-// // 	{
-// // 		printf("%s\n", array[i]);
-// // 		free(array[i]);
-// // 		i++;
-// // 	}
+// 	while (array[i])
+// 	{
+// 		printf("%s\n", array[i]);
+// 		free(array[i]);
+// 		i++;
+// 	}
 // 	free(array);
 //  }

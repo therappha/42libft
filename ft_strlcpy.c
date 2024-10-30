@@ -6,11 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 01:22:49 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 15:31:51 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:02:45 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlcpy(char *src, char *dest, unsigned int size)
+int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 {
 	unsigned int	i;
 	int				len;

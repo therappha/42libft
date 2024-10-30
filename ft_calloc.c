@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:53:24 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 18:11:27 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:13:32 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*mem;
 
 	if (!nmemb || !size)
-		return (NULL);
+		return (malloc(0));
 	mem = (void *)malloc(size * nmemb);
 	if (!mem)
 		return (NULL);

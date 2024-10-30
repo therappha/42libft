@@ -6,11 +6,12 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 21:16:09 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/24 16:57:31 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:21:13 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -19,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t			i;
 
 	i = 0;
+	if (!dest && !src)
+		return (dest);
 	src_bytes = (unsigned char *)src;
 	dest_bytes = (unsigned char *)dest;
 	while (i < n)
