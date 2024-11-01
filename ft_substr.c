@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:05 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/30 17:19:44 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/01 17:17:29 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (start >= strlen)
 	{
 		substr = (char *)malloc(sizeof(char));
-		substr[0] = '\0';
+		if (substr)
+			substr[0] = '\0';
 		return (substr);
 	}
 	if (len > strlen - start)

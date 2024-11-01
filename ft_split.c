@@ -6,12 +6,29 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/30 18:30:08 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/01 18:29:12 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+
+static void	*ft_freesplit(char **array, int i)
+{
+	while (i > 0)
+	{
+		free(array[--i]);
+	}
+	free(array);
+	return (NULL);
+}
+
+int	while_separator(const char *s, char c, int i)
+{
+	while (s[i] == c && s[i] != '\0')
+		i++;
+	return (i);
+}
 
 static int	ft_countwords(const char *s, char c)
 {
@@ -69,36 +86,37 @@ char	**ft_split(char const *s, char c)
 
 	words = ft_countwords(s, c);
 	array = (char **)malloc((words + 1) * sizeof(char *));
-	if (!array || !s)
+	if (!array)
 		return (NULL);
 	i = 0;
 	arrnmb = 0;
 	while (s[i] && arrnmb < words)
 	{
-		while (s[i] == c && s[i] != '\0')
-			i++;
+		i = while_separator(s, c, i);
 		j = i;
 		while (s[j] != c && s[j] != '\0')
 			j++;
 		array[arrnmb++] = ft_strndupmod(s, i, j - 1);
+		if (!array[arrnmb - 1])
+			return (ft_freesplit(array, arrnmb));
 		i = j;
 	}
 	array[arrnmb] = NULL;
 	return (array);
 }
 
-// int	main(void)
-// {
-// 	char str[] = "             ";
-// 	int i = 0;
-// 	char **array;
-// 	array = ft_split(str, '\0');
-// 		printf("'%s' splitted into:\n", str);
-// 	while (array[i])
-// 	{
-// 		printf("%s\n", array[i]);
+//  int	main(void)
+//  {
+// 	char str[] = "Ola mundo cryek";
+//  	int i = 0;
+//  	char **array;
+// 	array = ft_split(str, ' ');
+//  		printf("'%s' splitted into:\n", str);
+//  	while (array[i])
+//  	{
+//  		printf("%s\n", array[i]);
 // 		free(array[i]);
-// 		i++;
-// 	}
-// 	free(array);
+//  		i++;
+//  	}
+//  	free(array);
 //  }

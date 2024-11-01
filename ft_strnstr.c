@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:07:57 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/29 16:49:39 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/01 18:22:05 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		}
 		if (!little[j])
 			return ((char *)big + i - j);
-		i += j;
 		i++;
 	}
 	return (NULL);

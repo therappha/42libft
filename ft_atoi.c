@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:52:44 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 19:55:35 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/10/30 19:39:28 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,12 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)result * minus);
 }
+// #include <stdio.h>
+// int	main(int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		printf("ft_atoi: %d\n", ft_atoi(av[1]));
+// 		printf("atoi: %d\n", ft_atoi(av[1]));
+// 	}
+// }
