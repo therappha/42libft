@@ -6,9 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:52:44 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/30 19:39:28 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:20:58 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

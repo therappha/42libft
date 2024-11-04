@@ -6,11 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:32:05 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/25 17:52:52 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:21:08 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

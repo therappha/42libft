@@ -6,12 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/01 18:29:12 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:23:55 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static void	*ft_freesplit(char **array, int i)
 {

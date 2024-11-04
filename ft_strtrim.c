@@ -6,13 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:43:25 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/01 17:13:13 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:30:59 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stddef.h>
+#include "libft.h"
 
 static int	ft_strhas(const char *str, char c)
 {
@@ -23,16 +21,6 @@ static int	ft_strhas(const char *str, char c)
 		str++;
 	}
 	return (0);
-}
-
-static size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (*str++)
-		i++;
-	return (i);
 }
 
 static char	*ft_strndupmod(const char *str, int start, int end)

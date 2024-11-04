@@ -6,11 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:53:26 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/01 20:31:39 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:22:34 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

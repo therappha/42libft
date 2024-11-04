@@ -6,12 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:32:00 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/01 19:51:13 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:22:03 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	ft_nbrsize(int n)
 {

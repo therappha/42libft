@@ -6,26 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:53:24 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/29 16:13:32 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:21:29 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
-
-static void	ft_bzero(void *s, size_t n)
-{
-	size_t			i;
-	unsigned char	*mem;
-
-	mem = s;
-	i = 0;
-	while (i < n)
-	{
-		mem[i] = 0;
-		i++;
-	}
-}
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

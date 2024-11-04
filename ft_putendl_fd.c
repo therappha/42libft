@@ -6,17 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:36:17 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/26 19:09:07 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:23:08 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-
-static void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

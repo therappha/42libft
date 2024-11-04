@@ -6,11 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 00:23:03 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 15:29:32 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:22:29 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

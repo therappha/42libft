@@ -6,11 +6,11 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:47:14 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/22 19:22:26 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:24:31 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static char	*ft_strcpy(char *dest, char *src)
 {
@@ -24,16 +24,6 @@ static char	*ft_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 	return (dest);
-}
-
-static int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
