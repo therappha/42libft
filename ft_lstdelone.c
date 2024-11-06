@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 17:55:31 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/18 17:55:31 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/11/06 19:05:53 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/11/06 19:05:53 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	size_t	i;
-
-	i = 0;
-	while (*str++)
-		i++;
-	return (i);
+	if (!lst)
+		return ;
+	del(lst ->content);
+	free(lst);
 }
-// #include "tests.h"
-// int	main(void)
+// static void del(void *content)
 // {
-// 	char str[] = "Hello, World!";
-// 	size_t len = ft_strlen(str);
-// 	printf("%zu", len);
+// 	free(content);
 // }
+

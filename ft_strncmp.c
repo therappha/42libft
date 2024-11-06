@@ -23,3 +23,14 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
+// #include "tests.h"
+// int	main(int ac, char **av)
+// {
+// 	char *str1 = av[1];
+// 	char *str2 = av[2];
+
+// 	size_t size = atoi(av[3]);
+// 	printf("Original: %d\n", strncmp(str1, str2, size));
+// 	printf("Mine: %d\n", ft_strncmp(str1, str2, size));
+
+// }

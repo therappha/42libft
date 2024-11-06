@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 17:55:31 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/18 17:55:31 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/11/06 18:11:18 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/11/06 18:11:18 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+t_list *ft_lstlast(t_list *lst)
 {
-	size_t	i;
-
-	i = 0;
-	while (*str++)
-		i++;
-	return (i);
+	if (!lst)
+		return (NULL) ;
+	while(lst -> next)
+		lst = lst -> next;
+	return (lst);
 }
 // #include "tests.h"
 // int	main(void)
 // {
-// 	char str[] = "Hello, World!";
-// 	size_t len = ft_strlen(str);
-// 	printf("%zu", len);
-// }
+// 	t_list *first = ft_lstnew(1);
+// 	t_list *second = ft_lstnew(2);
+// 	t_list *third = ft_lstnew(3);
+// 	t_list *fourth = ft_lstnew(4);
+// 	t_list *temp = first;
+
+// 	first -> next = second;
+// 	second -> next = third;
+// 	third -> next = fourth;
+// 	temp = ft_lstlast(temp);
+// 	printf("%d", (int)(temp -> content));
+//  }
