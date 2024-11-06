@@ -28,3 +28,26 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+// #include "tests.h"
+// int main(void)
+// {
+// 	char buffer[10];
+// 	char buffer_ft[10];
+// 	int size = 10;
+// 	ft_memset(buffer_ft, 'a', size);
+// 	memset(buffer, 'a', size);
+// 	int i = 0;
+// 	printf("Original:");
+// 	while ( i < sizeof(buffer))
+// 	{
+// 		printf("%c", (buffer[i]));
+// 		i++;
+// 	}
+// 	 i = 0;
+// 	printf("\nMine:    ");
+// 	while ( i < sizeof(buffer_ft))
+// 	{
+// 		printf("%c", (buffer_ft[i]));
+// 		i++;
+// 	}
+// }

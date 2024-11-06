@@ -24,3 +24,13 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)str);
 	return (NULL);
 }
+// #include "tests.h"
+// int	main(void)
+// {
+// 	char str[] = "Hello, World!";
+// 	char *result = ft_strchr(str, 'X');
+// 	if (result)
+// 		printf("%s\n", result);
+// 	else
+// 		printf("NOT FOUND");
+// }

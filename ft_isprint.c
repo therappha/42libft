@@ -16,3 +16,10 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+// #include "tests.h"
+// int	main(void)
+// {
+// 	int charvalue = '\0';
+// 	printf("Mine: '%d'\n", ft_isprint(charvalue));
+// 	printf("Original: '%d'\n", isprint(charvalue));
+// }

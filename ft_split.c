@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/04 19:23:55 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/06 00:37:43 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	*ft_freesplit(char **array, int i)
 	return (NULL);
 }
 
-int	while_separator(const char *s, char c, int i)
+static int	while_separator(const char *s, char c, int i)
 {
 	while (s[i] == c && s[i] != '\0')
 		i++;
@@ -103,13 +103,14 @@ char	**ft_split(char const *s, char c)
 	array[arrnmb] = NULL;
 	return (array);
 }
-
-//  int	main(void)
+// #include "tests.h"
+//  int	main(int ac, char **av)
 //  {
-// 	char str[] = "Ola mundo cryek";
-//  	int i = 0;
+// 	char *str = av[1];
+//  	char c = av[2][0];
+// 	int i = 0;
 //  	char **array;
-// 	array = ft_split(str, ' ');
+// 	array = ft_split(str, c);
 //  		printf("'%s' splitted into:\n", str);
 //  	while (array[i])
 //  	{

@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   tests.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 17:26:00 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/10/18 17:26:00 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/11/02 15:46:04 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/11/02 15:46:04 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
-{
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
-}
-// #include "tests.h"
-// int	main(void)
-// {
-// 	int charvalue = 'a';
-// 	printf("Mine: '%d'\n", ft_isascii(charvalue));
-// 	printf("Original: '%d'\n", isascii(charvalue));
-// }
+
+#ifndef TESTS_H
+# define TESTS_H
+
+#include <stdio.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <unistd.h>
+
+#endif
