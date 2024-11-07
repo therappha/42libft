@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 19:20:11 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/07 17:28:59 by rafaelfe         ###   ########.fr       */
+/*   Created: 2024/11/07 17:08:13 by rafaelfe          #+#    #+#             */
+/*   Updated: 2024/11/07 17:42:51 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int	list_size;
-
-	list_size = 0;
 	while (lst)
 	{
-		list_size++;
+		f(lst -> content);
 		lst = lst -> next;
 	}
-	return (list_size);
 }
 // #include "tests.h"
 // int	main(void)
 // {
-// 	t_list *first = ft_lstnew(1);
+// 	t_list *first = ft_lstnew(ft_strdup(~));
 // 	t_list *second = ft_lstnew(2);
 // 	t_list *third = ft_lstnew(3);
 // 	t_list *fourth = ft_lstnew(4);

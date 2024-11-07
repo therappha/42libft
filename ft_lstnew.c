@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:42:30 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 18:22:46 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:51:29 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstnew(void *content)
 	newlist -> next = NULL;
 	return (newlist);
 }
-//#include "tests.h"
+// #include "tests.h"
 // int	main(void)
 // {
 // 	t_list *first = ft_lstnew(1);

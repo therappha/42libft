@@ -31,7 +31,7 @@ char	*ft_strrchr(const char *str, int c)
 		return (NULL);
 	return ((char *)(str + last));
 }
-#include "tests.h"
+// #include "tests.h"
 // int	main(void)
 // {
 // 	char str[] = "Hello, World!";

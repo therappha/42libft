@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:53:26 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 17:44:20 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:40:00 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (!dest && !src)
 		return (NULL);
 	dest_bytes = (unsigned char *)dest;
-	src_bytes = (const unsigned char *)src;
 	i = 0;
 	if (dest_bytes < src_bytes)
 	{
@@ -49,12 +48,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // 	char src_ft[] = "Hello, World!";
 // 	char dest_ft[50];
 
-// 	printf("TEST 1 Before memmove: src = '%s', dest = '%s'\n", src, dest);
+// 	printf("TEST 1 Before memmove: src = '%s',
+//  dest = '%s'\n", src, dest);
 // 	memmove(dest, src, 13);
-// 	printf("After memmove: src = '%s', dest = '%s'\n", src, dest);
-// 	printf("TEST 1 Before ft_memmove: src_ft = '%s', dest_ft = '%s'\n", src_ft, dest_ft);
+// 	printf("After memmove: src = '%s',
+//  dest = '%s'\n", src, dest);
+// 	printf("TEST 1 Before ft_memmove: src_ft = '%s',
+// dest_ft = '%s'\n", src_ft, dest_ft);
 // 	ft_memmove(dest_ft, src_ft, 13);
-// 	printf("After ft_memmove: src_ft = '%s', dest_ft = '%s'\n\n", src_ft, dest_ft);
+// 	printf("After ft_memmove: src_ft = '%s',
+//  dest_ft = '%s'\n\n", src_ft, dest_ft);
 
 // 	char str[] = "Hello, World!";
 // 	printf("TEST 2 Before memmove: str = '%s'\n", str);

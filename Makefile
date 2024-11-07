@@ -19,7 +19,7 @@ ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c \
 ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
 
 BONUS = ft_lstnew.c ft_lstsize.c ft_lstadd_front.c ft_lstlast.c \
-ft_lstadd_back.c ft_lstdelone.c
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c
 
 CC = cc
 

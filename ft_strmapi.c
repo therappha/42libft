@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:51:25 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 19:36:42 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:41:44 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // {
 // 	char *str = av[1];
 // 	char *dest = ft_strmapi(str, ft_swapcase);
-
 // 	printf("After: %s\n\n", dest);
 // 	free(dest);
 // }
-

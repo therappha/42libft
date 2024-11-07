@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 21:16:09 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/05 23:53:53 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:29:26 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 	int number = 0;
 // 	int number_ft = 0;
 // 	int number1 = 511;
-
-
 // 	memcpy(&number, &number1, 1);
 // 	ft_memcpy(&number_ft, &number1, 1);
 
