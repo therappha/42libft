@@ -1,7 +1,0 @@
-*.o
-
-libft.a
-
-*.out
-
-main.c
