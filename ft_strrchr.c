@@ -31,13 +31,3 @@ char	*ft_strrchr(const char *str, int c)
 		return (NULL);
 	return ((char *)(str + last));
 }
-// #include "tests.h"
-// int	main(void)
-// {
-// 	char str[] = "Hello, World!";
-// 	char *result = ft_strrchr(str, 'o');
-// 	if (result)
-// 		printf("%s\n", result);
-// 	else
-// 		printf("NOT FOUND");
-// }

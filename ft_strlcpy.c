@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 01:22:49 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/07 17:40:34 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:41:43 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 	dest[i] = '\0';
 	return (len);
 }
-// #include "tests.h"
-// int	main(void)
-// {
-// 	char dest[20] = "";
-// 	char src[] = "Hello, World!";
-// 	size_t size = sizeof(dest);
-
-// 	size_t result = ft_strlcpy(dest, src, size);
-// 	printf("Resulting string: %s\n", dest);
-// 	printf("Total length: %zu\n", result);
-// }

@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:05 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 17:48:03 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:42:07 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-// #include "tests.h"
-// int	main(void)
-// {
-// 	char str[] = "Hello, World!";
-// 	char *dest = ft_substr(str, 0, 25);
-// 	printf("%s", dest);
-// }

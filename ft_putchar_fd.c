@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:41:36 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 16:57:11 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:41:17 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-// int	main(void)
-// {
-// 	ft_putchar_fd('h', 1);
-// }

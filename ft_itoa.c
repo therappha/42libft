@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:32:00 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 16:56:43 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:40:16 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,13 +71,3 @@ char	*ft_itoa(int n)
 	result[i] = '\0';
 	return (result);
 }
-// #include "tests.h"
-// int	main(int ac, char **av)
-// {
-// 	char *str;
-// 	if (ac == 2)
-// 		str =  ft_itoa(atoi(av[1]));
-//  		printf("%d with ft_itoa is: '%s'", atoi(av[1]), str);
-// 		free(str);
-
-// }

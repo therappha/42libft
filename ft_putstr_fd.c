@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:31:48 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/04 19:23:16 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:41:24 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,3 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
-/*int	main(void)
-{
-	ft_putstr_fd("Hello, World!", 1);
-}*/

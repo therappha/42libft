@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:33:44 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 00:28:51 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:41:22 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((nmbr % 10) + '0', fd);
 	}
 }
-// int main(int ac, char **av)
-// {
-// 	if (ac == 2)
-// 		ft_putnbr_fd(atoi(av[1]), 1);
-// }

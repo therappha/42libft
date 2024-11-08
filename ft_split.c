@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:23:28 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 15:52:53 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:41:29 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,20 +103,3 @@ char	**ft_split(char const *s, char c)
 	array[arrnmb] = NULL;
 	return (array);
 }
-// #include "tests.h"
-//  int	main(int ac, char **av)
-//  {
-// 	char *str = av[1];
-//  	char c = av[2][0];
-// 	int i = 0;
-//  	char **array;
-// 	array = ft_split(str, c);
-//  		printf("'%s' splitted into:\n", str);
-//  	while (array[i])
-//  	{
-//  		printf("%s\n", array[i]);
-// 		free(array[i]);
-//  		i++;
-//  	}
-//  	free(array);
-//  }

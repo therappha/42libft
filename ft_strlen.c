@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-// #include "tests.h"
-// int	main(void)
-// {
-// 	char str[] = "Hello, World!";
-// 	size_t len = ft_strlen(str);
-// 	printf("%zu", len);
-// }

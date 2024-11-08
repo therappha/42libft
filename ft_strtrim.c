@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:43:25 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/04 19:30:59 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:42:04 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,11 +66,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_strndupmod(s1, start, end));
 }
-// int	main(void)
-// {
-// 	char *str = "  	dadsadasd  	 ";
-// 	str = ft_strtrim(str, "  	");
-
-// 	printf("%s\n", str);
-// 	free(str);
-// }

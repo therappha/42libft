@@ -20,18 +20,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst -> next;
 	return (lst);
 }
-// #include "tests.h"
-// int	main(void)
-// {
-// 	t_list *first = ft_lstnew(1);
-// 	t_list *second = ft_lstnew(2);
-// 	t_list *third = ft_lstnew(3);
-// 	t_list *fourth = ft_lstnew(4);
-// 	t_list *temp = first;
-
-// 	first -> next = second;
-// 	second -> next = third;
-// 	third -> next = fourth;
-// 	temp = ft_lstlast(temp);
-// 	printf("%d", (int)(temp -> content));
-//  }

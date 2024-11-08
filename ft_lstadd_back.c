@@ -26,22 +26,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	temp = ft_lstlast(*lst);
 	temp -> next = new;
 }
-
-//  #include "tests.h"
-// int	main(void)
-// {
-// 	t_list *first = ft_lstnew(1);
-// 	t_list *second = ft_lstnew(2);
-// 	t_list *third = ft_lstnew(3);
-// 	t_list *fourth = ft_lstnew(4);
-// 	t_list *temp = first;
-
-// 	ft_lstadd_back(&first, second);
-// 	ft_lstadd_back(&second, third);
-// 	ft_lstadd_back(&third, fourth);
-// 	while(temp)
-// 	{
-// 		printf("% d", (int)(temp -> content));
-// 		temp = temp -> next;
-// 	}
-//  }

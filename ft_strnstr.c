@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:07:57 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/04 19:25:20 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:41:54 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-// int	main(void)
-// {
-// 	printf("%s", ft_strnstr("aabcdefgh", "abc", -1));
-// }

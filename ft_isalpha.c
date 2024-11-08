@@ -16,12 +16,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-// #include "tests.h"
-// int	main(int ac, char **av)
-// {
-
-// 	if (ac == 2)
-// 	{	printf("Mine: '%d'\n", ft_isalpha(av[1][0]));
-// 		printf("Original: '%d'\n", isalpha(av[1][0]));
-// 	}
-// }
