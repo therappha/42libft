@@ -6,7 +6,7 @@
 /*   By: rafaelfe <rafaelfe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:47:14 by rafaelfe          #+#    #+#             */
-/*   Updated: 2024/11/06 16:18:11 by rafaelfe         ###   ########.fr       */
+/*   Updated: 2024/11/15 17:18:12 by rafaelfe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strcpy((str + ft_strlen(s1)), (char *)s2);
 	return (str);
 }
-// #include "tests.h"
-// int	main(void)
-// {
-// 	char str1[] = "Hello, ";
-// 	char str2[] = "World!";
-// 	char *str3 = ft_strjoin(str1, str2);
-// 	printf("%s", str3);
-// }
